@@ -10,17 +10,7 @@ import UserProfile from './components/UserProfile'
 import ProfilePage from './ProfilePage'
 import UserContext from './UserContext'
 function App() {
-  const [count, setCount] = useState(0)
-  const userData = { name: "Jane Doe", email: "jane.doe@example.com" };
-
-  return(
-    <UserContext.Provider value={userData}>
-      <ProfilePage userData={userData} />;
-    </UserContext.Provider>
-  );
-  
-  
-
+  const [count, setCount] = useState(0);
   return (
     <>
       <div>
@@ -49,6 +39,9 @@ function App() {
       <MainContent />
       <Footer />
       <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
+      <UserContext.Provider>
+        <ProfilePage />;
+      </UserContext.Provider>
       
     </>
   )
