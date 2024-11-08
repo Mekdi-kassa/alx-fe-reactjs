@@ -1,14 +1,18 @@
-import logo from './logo.svg';
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Navbar from './Navbar';
-import Home from './Home';
-import About from './About';
-import Services from './Services';
-import Contact from './Contact';
-import Footer from './Footer';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Services from './components/Services';
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
     <Router>
       <div style={{fontFamily:'sans-serif'}}>
@@ -25,4 +29,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
