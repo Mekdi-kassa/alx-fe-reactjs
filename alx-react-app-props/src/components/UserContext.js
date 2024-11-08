@@ -15,4 +15,4 @@ function UserContextProvider({ children }) {
 }
 
 // Export both the context and the provider
-export { UserContext, UserContextProvider };
+export default { UserContext, UserContextProvider };
