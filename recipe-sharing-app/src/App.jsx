@@ -1,5 +1,5 @@
 import React from 'react';
-import RecipeList from './RecipeList';
+import RecipeList from './components/RecipeList';
 import AddRecipeForm from './AddRecipeForm';
 
 const App = () => {
