@@ -1,6 +1,6 @@
 import React from 'react';
-import RecipeList from './Components/RecipeList';
-import AddRecipeForm from './Components/AddRecipeForm';
+import RecipeList from './components/RecipeList';
+import AddRecipeForm from './components/AddRecipeForm';
 
 const App = () => {
   return (
