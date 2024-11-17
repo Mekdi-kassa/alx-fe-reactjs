@@ -1,7 +1,7 @@
 import create from'zustand';
-const useRecipeStore=create((set)=>({
+const useRecipeStore=create((setRecipes)=>({
     recipes:[],
-    addRecipe:(newrecipe)=>set((n)=>({recipes:[...n.recipes,newrecipe]})),
-    setRecipe:(recipes)=>set({recipes})
+    addRecipe:(newrecipe)=>setRecipes((n)=>({recipes:[...n.recipes,newrecipe]})),
+    setRecipe:(recipes)=>setRecipes({recipes})
 }))
 export {useRecipeStore};
