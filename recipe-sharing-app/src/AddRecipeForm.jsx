@@ -1,6 +1,6 @@
 // src/components/AddRecipeForm.jsx
 import { useState } from 'react';
-import { useRecipestore } from '../recipestore';
+import { useRecipestore } from './recipestore';
 
 const AddRecipeForm = () => {
   const addRecipe = useRecipestore((state) => state.addRecipe);
