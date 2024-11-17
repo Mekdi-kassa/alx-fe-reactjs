@@ -1,4 +1,4 @@
-import { useRecipestore } from "../recipestore";
+import { useRecipestore } from "../recipeStore";
 const RecipeList=()=>{
     const recipes=useRecipestore((n)=>n.recipes)
     return(
