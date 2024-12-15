@@ -1,14 +1,9 @@
 // src/services/githubService.js
+// src/services/githubService.js
 import axios from 'axios';
 
-const GITHUB_API_URL = 'https://api.github.com/users';
-
+// Function to fetch user data based on the username
 export const fetchUserData = async (username) => {
-  try {
-    const response = await axios.get(`${GITHUB_API_URL}/${username}`);
-    return response.data; // Return the user data
-  } catch (error) {
-    console.error('Error fetching user data:', error);
-    throw error;
-  }
+    const response = await axios.get(`https://api.github.com/users/${username}`);
+    return response.data; // Return the user data from the API response
 };
