@@ -17,7 +17,7 @@ export const fetchUserData = async (username, location, minRepos) => {
     }
 
     // Construct the complete GitHub API search query
-    const response = await axios.get(`https://api.github.com/search/users?${query}`);
+    const response = await axios.get(`https://api.github.com/search/users?q${query}`);
     return response.data.items;  // Return the list of user results
   } catch (error) {
     console.error("Error fetching data from GitHub API:", error);
